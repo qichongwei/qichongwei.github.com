@@ -1,7 +1,7 @@
 /*设置通用样式*/
   *{
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 .box{
     width: 100%;
