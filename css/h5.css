@@ -25,3 +25,13 @@ aside{
     width: 30%;
 
 }
+audio{
+    width: 400px;
+}
+form{
+    margin: 10px 0;
+}
+canvas{
+    width:290px;
+    height: 500px;
+}

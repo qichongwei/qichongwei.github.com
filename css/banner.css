@@ -1,0 +1,75 @@
+/*通配样式*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*窗口*/
+.container{
+    width: 400px;
+    height: 266px;
+    margin: 30px auto;
+    overflow: hidden;
+    position: relative;
+}
+/*主容器*/
+.box{
+    width: 2800px;
+    height: 266px;
+    position: absolute;
+
+
+}
+/*单位图片*/
+.item{
+    display: inline-block;
+    width: 400px;
+    height: 266px;
+}
+/*左点击，右点击*/
+.left,.right{
+    width: 30px;
+    height: 55px;
+    z-index: 1000;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+    }
+.left{
+    top:118px;
+}
+.right{
+    top:118px;
+    right: 0px;
+}
+/*下标*/
+.icon{
+    width: 200px;
+    position: absolute;
+    bottom: 20px;
+    left: 175px;
+    height: 20px;
+}
+.info{
+    display: inline-block;
+    width: 5px;
+    height: 10px;
+    background-color: white;
+    margin: 0 5px;
+    vertical-align: bottom;
+
+}
+.info:first-child{
+    display: none;
+
+}
+.info:last-child{
+    position: relative;
+    right: 75px;
+
+
+}
+.infoOn{
+    height: 20px;
+    background-color: blue;
+}
