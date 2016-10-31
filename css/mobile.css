@@ -1,0 +1,362 @@
+/*通配样式*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 100%;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+/*头部样式*/
+header{
+    height: 50px;
+    margin-top: 10px;
+    overflow: hidden;
+
+}
+header a img{
+    width: 185px;
+    height: 50px;
+}
+header span {
+    margin-top: 3px;
+    padding: 5px 8px;
+    width: 44px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    border: solid 1px #999;
+    border-radius: 5px;
+    display: none;
+}
+header span img{
+    width: 28px;
+    height: 30px;
+
+}
+/*导航栏样式*/
+.navBox1{
+    margin: 20px auto 0 auto;
+    display: none;
+    position: absolute;
+    top:55px;
+    z-index: 10000;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+.navBox1 li{
+    list-style: none;
+    width: 100%;
+    height: 53px;
+    text-align: center;
+
+}
+.navBox1 li a{
+    font-size: 16px;
+    text-decoration: none;
+    color:#666;
+}
+.navBox1 li a:hover{
+    transform: scale(1.2);
+}
+.navBox{
+    float: right;
+    height: 50px;
+}
+.navBox ul{
+    position: absolute;
+    right: 0;
+}
+.navBox li{
+    display: inline-block;
+    width: 72px;
+    height: 50px;
+    text-align: center;
+    padding-top: 17px;
+
+
+}
+.navBox li a{
+    font-size: 16px;
+    text-decoration: none;
+    color:#333;
+}
+.navBox li a:hover{
+color: #0e90d2;
+}
+/*轮播图*/
+.bannerC{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 16px;
+}
+.banner{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.banner div{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+}
+.banner div img{
+    width: 100%;
+    height: 500px;
+}
+ .bannerA{
+    position: absolute;
+     width: 50px;
+     height: 60px;
+     top:220px;
+     display: none;
+}
+ .bannerleft{
+left: 0;
+
+ }
+ .bannerright{
+     right: 0;
+
+ }
+ .banneritem{
+     position: absolute;
+     bottom: 20px;
+     left: 50%;
+     width: 200px;
+     height: 20px;
+     margin-left:-100px;
+ }
+ .banneritem span{
+     display: inline-block;
+    width: 15px;
+     height: 15px;
+     border-radius: 50%;
+
+     border: solid 1px #fff;
+     margin:0 17.5px;
+ }
+ .bis{
+     background-color: #fff;
+ }
+ .pas{
+     width: 100%;
+     height: 400px;
+ }
+ .pas h3,.pas h4,.pas p{
+     text-align: center;
+    color:#a9a9a9;
+ }
+ .pas h3{
+     font-size: 22px;
+    font-weight: bold;
+     margin-top: 50px;
+     margin-bottom: 10px;
+     color: #333;
+ }
+ .pbox{
+     width: 25%;
+     height: 300px;
+     float: left;
+     margin-top: 20px;
+ }
+ .pitem:hover{
+     box-shadow: #ddd 0 0 2px 3px;
+ }
+ .pitem{
+     margin: 0 10px;
+     border: solid 1px #ddd;
+     height: 300px;
+ }
+ .pitem>img{
+   display: block;
+     border: 2px solid #959595;
+     border-radius: 50%;
+     width: 104px;
+     height: 104px;
+     margin: 30px auto 20px auto;
+
+ }
+ .pitem>p{
+     font-size: 13px;
+     margin-top: 10px;
+ }
+ .content{
+     height:550px;
+ }
+ .content .citem{
+    width: 50%;
+     float: left;
+    padding: 10px;
+ }
+ .citem h3{
+     font-size: 20px;
+     font-weight: bolder;
+     margin-bottom: 20px;
+ }
+ .cin{
+     border: 1px solid #ddd;
+     padding: 8px;
+     height: 150px;
+     border-radius: 5px;
+ }
+ .cinleft, .cinright{
+     float: left;
+ }
+ .cinright{
+     width: 80%;
+     padding-left: 10px;
+ }
+ .cinright h4{
+     padding: 12px 0 8px 0;
+     font-weight: bolder;
+ }
+ .cinright p{
+     font-size: 15px;
+     line-height: 25px;
+ }
+ .cinrp{
+     line-height: 35px;
+     margin-bottom: 35px;
+     text-overflow:ellipsis;
+     word-break: keep-all;
+     white-space:nowrap;
+     overflow:hidden;
+ }
+ .cinright p:last-child{
+     float: right;
+ }
+ .cinleft{
+     width: 20%;
+     height: 100%;
+
+ }
+ .cinleft img{
+     width: 100%;
+     height: 100%;
+ }
+ .cin p:hover,.cin h4:hover{
+     color:#0e90d2;
+     cursor: pointer;
+ }
+.message{
+    width: 100%;
+   padding: 30px 5% 0  5%;
+    background-color: #232a34;
+    color: #d9d9d9;
+    height: 150px;
+}
+.messagei{
+float: left;
+    padding: 10px 15px 0 15px;
+}
+.messagei:first-child{
+    width: 16.7%;
+}
+.messagei:nth-child(2){
+    width: 16.7%;
+}
+.messagei:nth-child(3){
+    width: 41.6%;
+}
+.messagei:last-child{
+    width:25% ;
+}
+.messagei input{
+        width: 100%;
+    display: block;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#btn{
+    width: 185px;
+}
+footer{
+    text-align: center;
+    font-size: 15px;
+    color: #666;
+    line-height: 2em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: #aaa;
+}
+
+@media (max-width: 992px) {
+    .container{
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .pbox{
+        width: 50%;
+    }
+    .citem{
+        width: 100%;
+    }
+
+    .pas{
+        height: 700px;
+    }
+    .messagei:first-child,.messagei:nth-child(2), .messagei:nth-child(3),.messagei:last-child{
+        width:50% ;
+    }
+    .content .citem{
+        width: 100%;
+    }
+    .content{
+        height: 1050px;
+    }
+}
+@media (max-width: 768px) {
+    .pbox {
+        width: 100%;
+    }
+    .messagei:first-child,.messagei:nth-child(2), .messagei:nth-child(3),.messagei:last-child{
+        width:100% ;
+    }
+    .container{
+        width: 95%;
+    }
+    .pas{
+        height: 1350px;
+    }
+    .message{
+
+
+        height: 250px;
+    }
+    .cinleft{
+        width: 30%;
+    }
+    .cinright{
+        width:70%;
+
+    }
+    header span{
+        display: inline-block;
+    }
+    .navBox{
+        display: none;
+    }
+}
+
+
+
