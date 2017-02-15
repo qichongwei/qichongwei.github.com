@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉菜单</title>
+    <style>
+        .note {
+            width: 300px;
+            text-align: center;
+            color: #0e90d2;
+            border: solid 1px #84D7BA;
+            border-radius: 5px;
+            margin: 0 auto;
+        }
+
+        .menu {
+            margin: 0 auto;
+            margin-top: 50px;
+            width: 100px;
+            color: aqua;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+            border: solid 1px #aaa;
+            background-color: #3B5998;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+        .menu div{
+            display: none;
+        }
+        .menu:hover .drop{
+            display: block;
+
+        }
+        .drop{
+            box-sizing: border-box;
+            width:100px;
+            padding:0 20px;
+            text-align: center;
+        }
+        .drop a:hover{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+<div class="note">
+    这是一个，利用css伪类hover做的下拉菜单效果。关键点在于下拉部分要位于主标签的子标签里边。
+</div>
+<div class="menu">主标签
+    <div class="drop"><a>标签一</a><a>标签二</a><a>标签三</a><a>标签四</a></div>
+</div>
+</body>
+</html>
