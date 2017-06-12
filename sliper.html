@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>slipper</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        div {
+            width: 800px;
+            height: 100px;
+            line-height: 30px;
+            background-color: mediumspringgreen;
+            box-sizing: border-box;
+
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    这是一段测试移动端滑动的代码，   这是一段测试移动端滑动的代码，   这是一段测试移动端滑动的代码，   这是一段测试移动端滑动的代码，
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+<script>
+  var qiwei=function (width,idName) {
+        //获取移动设备屏幕宽度
+        var Clientwidth = document.documentElement.clientWidth;
+        console.log(width);
+        console.log(typeof width);
+        var box=document.getElementById(idName);
+        var box1 =$('#'+idName);
+        var startX = 0,
+            x = 0,
+            endX = 0;
+
+        box1.on('touchstart', function (event) {
+            event.preventDefault();
+            var touch = event.targetTouches[0];
+            startX = touch.pageX - x;
+        });
+       box1.on('touchmove', function (event) {
+            event.preventDefault();
+            var touch = event.targetTouches[0];
+            endX = touch.pageX;
+            x = endX - startX;
+
+            //防止用户向左滑动
+            if (x > 0) {
+                box.style.transform = 'translatex(0px)';
+                x=0;
+                return
+            }
+            //防止滑出div区域
+            if (x<Clientwidth-width) {
+                box.style.transform = 'translatex('+Clientwidth-width+')';
+                x=Clientwidth-width;
+                return;
+            }
+            box.style.transform = 'translatex(' + x + 'px)';
+
+
+        })
+
+    };
+    qiwei(800,'box');
+</script>
+</body>
+</html>
